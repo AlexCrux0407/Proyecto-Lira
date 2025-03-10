@@ -1,0 +1,54 @@
+// Import Bootstrap
+@import "~bootstrap/scss/bootstrap";
+
+// Custom variables
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$dark-color: #2c3e50;
+
+// Global styles
+body {
+  font-family: 'Roboto', sans-serif;
+  color: $dark-color;
+  background-color: #f8f9fa;
+}
+
+// Header styles
+.navbar-brand {
+  font-weight: bold;
+}
+
+// Card styles
+.card {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-header {
+    background-color: rgba($primary-color, 0.1);
+    font-weight: 500;
+  }
+}
+
+// Custom button styles
+.btn-primary {
+  background-color: $primary-color;
+  border-color: $primary-color;
+  
+  &:hover {
+    background-color: darken($primary-color, 10%);
+    border-color: darken($primary-color, 10%);
+  }
+}
+
+// Footer styles
+footer {
+  margin-top: 2rem;
+  padding: 1.5rem 0;
+  background-color: $dark-color;
+  color: white;
+}
